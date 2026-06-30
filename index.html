@@ -1,64 +1,50 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte e Sustentável</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin:0; padding:0; }
-        header { background: #2E7D32; color: white; padding: 20px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; }
-        section { padding: 50px; }
-        .banner { background: url('banner.jpg') no-repeat center center/cover; color: white; text-align: center; padding: 150px 20px; }
-        .btn { background: #81C784; padding: 10px 20px; color: white; text-decoration: none; border-radius: 5px; }
-        footer { background: #6D4C41; color: white; text-align: center; padding: 20px; }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="author" content="João Vitor Pires" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estação Meteorológica</title>
 </head>
+
 <body>
     <header>
-        <h1>Agro Forte e Sustentável</h1>
+        <h1>Estação Meteorológica</h1>
+
         <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#produtos">Produtos</a>
-            <a href="#sustentabilidade">Sustentabilidade</a>
-            <a href="#contato">Contato</a>
+            <input type="checkbox" id="toggle_btn" />
+            <label for="toggle_btn">&#8801;</label>
+
+            <ul>
+                <li>
+                    <a href="#">Início</a>
+                </li>
+
+                <li>
+                    <a href="#">Estação</a>
+                </li>
+
+                <li>
+                    <a href="#">Galeria</a>
+                </li>
+
+                <li>
+                    <a href="#">Sobre</a>
+                </li>
+            </ul>
         </nav>
     </header>
 
-    <section class="banner">
-        <h2>Fortalecendo o agro com responsabilidade e sustentabilidade</h2>
-        <a href="#produtos" class="btn">Nossos Projetos</a>
-    </section>
+    <main>
+        <section id="inicio">
+            <h2>previsão do tempo - (simepar)</h2>
+            <iframe src="https://g1.globo.com/previsao-do-tempo/pr/turvo-pr.ghtml" frameborder="0"></iframe>
+        </section>
+    </main>
 
-    <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>Promovemos uma agricultura forte, inovadora e sustentável, com foco em responsabilidade ambiental e social.</p>
-    </section>
-
-    <section id="servicos">
-        <h2>Nossos Serviços</h2>
-        <ul>
-            <li>Agricultura Sustentável</li>
-            <li>Consultoria Verde</li>
-            <li>Comercialização de Produtos Agroecológicos</li>
-            <li>Treinamentos para Produtores</li>
-        </ul>
-    </section>
-
-    <section id="produtos">
-        <h2>Produtos e Projetos</h2>
-        <p>Conheça nossos produtos orgânicos e projetos de impacto ambiental positivo.</p>
-    </section>
-
-    <section id="sustentabilidade">
-        <h2>Sustentabilidade</h2>
-        <p>Utilizamos práticas que respeitam o meio ambiente, promovendo energia limpa, reciclagem e preservação da biodiversidade.</p>
-    </section>
-
-    <footer id="contato">
-        <p>Contato: contato@agroforte.com | (00) 12345-6789</p>
-        <p>&copy; 2026 Agro Forte e Sustentável</p>
-    </footer>
+    <footer></footer>
 </body>
+
 </html>
